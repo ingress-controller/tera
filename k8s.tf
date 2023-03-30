@@ -70,7 +70,6 @@ resource "kubernetes_ingress_v1" "task" {
     }
 
     rule {
-      host = "devops.site"
       http {
         path {
           backend {
@@ -82,7 +81,7 @@ resource "kubernetes_ingress_v1" "task" {
             }
           }
 
-          path = "/"
+          path = "/$(namespace)/$(app_name)/"
         }
       }
     }
