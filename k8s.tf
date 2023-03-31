@@ -1,8 +1,3 @@
-resource "kubernetes_namespace" "task" {
-  metadata {
-    name = var.namespace
-  }
-}
 resource "kubernetes_deployment" "task" {
   metadata {
     name = var.app_name
