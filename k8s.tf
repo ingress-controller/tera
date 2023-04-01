@@ -76,7 +76,7 @@ resource "kubernetes_ingress_v1" "task" {
             }
           }
 
-          path = "/$(namespace)/$(app_name)/"
+          path = var.path
         }
       }
     }
