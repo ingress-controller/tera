@@ -47,3 +47,8 @@ variable "path" {
     type = string
     default = "/"
 }
+
+variable "port_name" {
+    type = string
+    default = "tcp"
+}
