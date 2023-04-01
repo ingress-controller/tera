@@ -42,3 +42,8 @@ variable "port_type" {
     type = string
     default = "NodePort"
 }
+
+variable "path" {
+    type = string
+    default = "/"
+}
