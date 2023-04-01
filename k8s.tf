@@ -94,7 +94,7 @@ resource "kubernetes_service_v1" "task" {
     }
     session_affinity = var.session_affinity
     port {
-      name        = "tcp"
+      name        = var.port_name
       port        = var.container_port
     }
     type = var.port_type
